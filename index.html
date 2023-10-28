@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/tit-icon.png" type="image/x-icon">
+    <title>Welcome to Prime Video </title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    <script src="main.js"></script>
+</head>
+<body >
+    <div>
+     <!-- Header navbar -->
+     <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background-color: black;">
+          <div class="container-fluid">
+              <!-- toggle button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>  
+
+              
+              <!-- <button id="menu-toggle" type="button" class="btn btn-dark   but-menu">menu</button>
+              <div id="menu-div" class="content menu-con bg-dark">
+                  <ul class="d-flex flex-column side-ul" >
+                      <li id="home-li" class="d-flex"><img src="images/home.png" width=18 height=18 alt=""><a id="home-a" class="text-white-50" href="">Home</a></li>
+                      <li id="store-li"class="d-flex"><img src="images/store.png" width="18" height="18"><a class="text-white-50" href="">Store</a></li>
+                      <li id="tv-li" class="d-flex"><img src="images/tv.png"   width="18" height="18" alt=""><a class="text-white-50" href="">Live TV</a></li>
+                      <li id="categ-li" class="d-flex"><img src="images/cat.png"  width="19" height="20" alt=""><a class="text-white-50" href="">Categories</a></li>
+                  </ul>
+              </div> -->
+              <!--  logo   -->
+              <a id="prime" class="navbar-brand mx-auto fs-6 fw-bold" href="#">primevideo</a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">                
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                  <!-- home -->
+                  <li class="nav-item dropdown mx-2">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a id="h-all" class="dropdown-item " href="#">All</a></li>
+                        <li><a id="h-mov" class="dropdown-item " href="#">Movies</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a id="h-tv" class="dropdown-item " href="#">TV Shows</a></li>
+                      </ul>
+                  </li>                    
+                  <li class="nav-item dropdown mx-2">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a id="s-all" class="dropdown-item " href="#">All</a></li>
+                      <li><a id="s-rent" class="dropdown-item " href="#">Rent</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a id="s-chan" class="dropdown-item " href="#">Channels</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a class="nav-link " id="liv" aria-current="page" href="#">Live TV</a>
+                    </li>
+                  <li class="nav-item dropdown mx-2">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                      </a>
+                      <div class="mega-box lpos">
+                          <div class="content">
+                              <div class="row">
+                                <header>Genres</header>
+                                  <ul class="mega-links">
+                                    <li ><form id="act" class="d-flex"><input type="submit" value="Action and adventure" class="menu-but" ></form></li>
+                                    <li><form class="d-flex"><input type="submit" value="Anime" class="menu-but"></form></li>
+                                    <li><form class="d-flex"><input type="submit" value="Comedy" class="menu-but"></form></li>
+                                    <li><form class="d-flex"><input type="submit" value="Documentary" class="menu-but"></form></li>
+                                    <li><form class="d-flex"><input type="submit" value="Drama" class="menu-but"></form></li>
+                                    <li><form class="d-flex"><input type="submit" value="Fantasy" class="menu-but"></form></li>
+                                      
+                                  </ul>                          
+                                </div>  
+                                <div class="row">
+                                    <header></header>
+                                    <ul class="mega-links">
+                                      <li><form class="d-flex"><input type="submit" value="Horror" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Kids" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Mystery and thrillers" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Romance" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Science fiction" class="menu-but"></form></li>
+                                         
+                                    </ul>                          
+                                </div> 
+                                <div class="row">
+                                    <header>Featured collections</header>
+                                    <ul class="mega-links">
+                                      <li><form class="d-flex"><input type="submit" value="Hindi" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="English" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Telugu" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Tamil" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Malayalam" class="menu-but"></form></li>
+                                      
+                                    </ul>                          
+                                </div>
+                                <div class="row">
+                                    <header></header>
+                                    <ul class="mega-links">
+                                      <li><form class="d-flex"><input type="submit" value="Kannada" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Marathi" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Punjabi" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Gujarati" class="menu-but"></form></li>
+                                      <li><form class="d-flex"><input type="submit" value="Bengali" class="menu-but"></form></li>
+                                     
+                                    </ul>                          
+                                </div>                   
+                            </div>
+                          </div>
+                          
+                  </li>                    
+              </ul>
+              <!-- navbar-right portion -->
+              
+              <div class="d-flex justify-content-center align-items-center gap-3 me-3">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                          <div class="d-flex justify-content-center align-items-center me-5">
+                          <input class="search mt-2" type="button"  role="button" id="ser-but" aria-label="Search Prime Video">
+                          <div class="search-div sd d-flex" id="ser">
+                            <div class="inner-search d-flex">
+                              <form action="" class="search-form d-flex">
+                                <span><img src="" alt=""></span>
+                                <input class="form-control me-2 ser-in" id="ser-text" type="search" placeholder="Search" aria-label="Search">
+                              </form>
+                            </div>
+                          </div>
+                        </div>             
+                      </li>
+                      <li class="nav-item">
+                          <a id="free" class="nav-link" href="#">Try for free</a>
+                      </li>
+                      <li class="nav-item dropdown mx-2">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EN
+                          </a>
+                          <div class="mega-box">
+                              <div class="content">
+                                  <div class="row">
+                                    <!-- <header></header> -->
+                                      <ul class="mega-links">
+                                        <li><form class="d-flex"><input type="submit" value="Bahasa Indonesia" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Behasa Melayu" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Dansk" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Deutsch" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="English" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Español" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Français" class="menu-but"></form></li>
+                                        <li><form class="d-flex"><input type="submit" value="Italiano" class="menu-but"></form></li>  
+                                      </ul>                          
+                                    </div>  
+                                    <div class="row">
+                                        <!-- <header></header> -->
+                                        <ul class="mega-links">
+                                          <li><form class="d-flex"><input type="submit" value="Magyar" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Nederlands" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Norsk" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Polski" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Português (Brasil)‎" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Português (Portugal)‎" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Română" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Suomi" class="menu-but"></form></li>                          
+                                        </ul>                          
+                                    </div> 
+                                    <div class="row">
+                                        <!-- <header></header> -->
+                                        <ul class="mega-links">
+                                          <li><form class="d-flex"><input type="submit" value="Svenska" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Türkçe" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Wikang Filipino" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Čeština" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Ελληνικά" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="Русский" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="עברית" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="العربية" class="menu-but"></form></li>  
+                                        </ul>                          
+                                    </div>
+                                    <div class="row">
+                                        <!-- <header></header> -->
+                                        <ul class="mega-links">
+                                          <li><form class="d-flex"><input type="submit" value="हिन्दी" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="தமிழ்" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="తెలుగు" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="ไทย" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="日本語" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="简体中文" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="繁體中文" class="menu-but"></form></li>
+                                          <li><form class="d-flex"><input type="submit" value="한국어" class="menu-but"></form></li>  
+                                        </ul>                          
+                                    </div>                   
+                                </div>
+                              </div>
+                          
+                      </li>  
+                  </ul>
+              </div>
+              <div class="d-flex navbar-expand-lg">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">                       
+                      <li class="nav-item dropdown">
+                          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="images/user.png" alt="">
+                          </a>
+                          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Sign In</a></li>
+                          <li><a class="dropdown-item " href="#">Help</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li> -->
+                          <li><a class="dropdown-item " href="#">Watch Anywhere</a></li>
+                          </ul>
+                      </li>  
+                  </ul>
+              </div>
+
+
+
+
+
+              <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </nav>
+  </div>
+      <!-- top-section-->
+    
+    
+    <section class="sect top-sec" id="home-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5 ps-5">
+            <h1 class="titl">Welcome to Prime Video</h1>
+            <br>
+            <p class="p-style lh-sm ">Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+            <br><button type="button" class="btn btn-primary" id="signIn" >Sign in to join Prime</button>    
+          </div>
+        </div>       
+       </div>
+    </section>
+    <!--Upper middle-section -->
+    
+    <section class="sect upper-mid" id="home-mid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5 ps-5">
+            <h1 class="titl">Movie rentals on Prime Video</h1><br>
+            <p class="p-style lh-sm ">Early Access to new movies, before digital subscription</p><br>
+            <button id="rent" type="button" class="btn btn-primary">Rent now</button>    
+          </div>
+        </div>       
+      </div>
+    </section>
+    <!--Lower middle-section -->
+    <section class="sect lower-mid  bg-white" id="home-low-mid">
+      
+      <div class="container">
+        <div class="row text-dark ">
+          <div class="col-md-6 mt-5 ps-5">
+              <h1 class="titl">Your favorite channels all in one place</h1>
+              <div class="sub-content mt-4">
+                <p class="p-style lh-sm fw-light">
+                  With Prime Video Channels, find shows and movies from 
+                  your favorite channels all in one place.Enjoy with an add-on subscription to Channels of your choice</p>
+              </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="container ms-5 ps-5">
+              <div class="row">
+                <div id="lion" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/LionsgatePlay-426X2946_V1.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="disc" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Discovery.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="bbc" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_BBC_PLAYER.png" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+              </div>
+              <div id="man" class="row">
+                <div class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_MANORAMAMAX.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="hoi" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/hoichoi-426X2946_V1.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="chau" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Chaupal.png" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+              </div>
+              <div class="row">
+                <div id="amc" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Amc.png" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="eros" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Erosnow-426X2948_V1.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="mubi" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Mubi-426X2946_V1.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+              </div>
+              <div id="vf" class="row">
+                <div class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Vrott.png" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="stin" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Stingray.png" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+                <div id="doc" class="col">
+                  <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Docubay-426X2947_V1.jpg" class="img-fluid mx-auto h-100 mx-lg-0  my-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+    </section>
+    <!--bottom-section 1 -->
+    <section class="sect upper-low" id="home-upper-low">
+      <div class="container">
+        <div class="row text-white ">
+          <div class="col-md-6 "></div>
+          <div class="col-md-6 mt-5 ps-5">
+            <h1 class="titl">Even better with Fire TV Stick</h1>
+              <div class="sub-content mt-4">
+                <p class="p-style lh-sm fw-light">
+                  The biggest movies and TV shows are always better on a big 
+                  screen. Simply plug in your Amazon Fire TV Stick and stream 
+                  on any HDTV. Press the voice button on the remote and say 
+                  the name of the title you want to watch to find it in seconds.</p>
+                  <br>
+                  <button type="button" class="btn btn-primary" id="start1" >Get started</button>    
+              </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <!--bottom-section 2 -->
+    <section class="sect lower-low" id="home-low-low">
+      <div class="container">
+        <div class="row text-white ">
+         <div class="col-md-6 mt-5 ps-5">
+          <h1 class="titl">Family Friendly</h1>
+          <div class="sub-content mt-4">
+            <p class="p-style lh-sm fw-light">
+          With easy to use Parental Controls and a dedicated kids page,
+          enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+          <br>
+          <button type="button" class="btn btn-primary" id="start2">Get started</button>    
+    </section>
+
+     <!-- footer -->
+    <footer class="d-flex justify-content-center">
+      <div class="d-block justify-content-center mt-3 align-items-center div-foot">
+          <div class="d-flex justify-content-center"><img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="" width="80" height="32"></div>
+          <p>
+            <span><a class="foot-link" href="">Terms and Privacy Notice</a>
+            </span><a class="foot-link" href="">Send us feedback</a><span></span>
+            <span><a class="foot-link" href="">Help</a></span></p>
+          <p><span class="text-white-50">© 1996-2023, Amazon.com, Inc. or its affiliates</span></p>
+      </div>
+    </footer>
+  
+  
+   
+    <!-- -->
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
